@@ -1,7 +1,6 @@
 package com.example.to_dolist;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -14,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
     public void Task(View view){
-        Intent addtask= new Intent(MainActivity.this, AddTaskActivity);
+        Intent addtask= new Intent(MainActivity.this, AddTaskActivity.class);
         startActivity(addtask);
     }
 
